@@ -45,12 +45,12 @@ $api_count = 1;
 // $prompt = "  <lora:CostumeJanusSchoolUniformV1:0.75>, white serafuku, long sleeves, white skirt, white pantyhose, crop top, double-breasted, groin,";
 // 巫女
 // $prompt = "1girl, solo,<lora:CostumeMikoJapaneseClothesShrineMaiden:0.75>, shrine maiden, cleavage, detached sleeves, white thighhighs, digust, blush, japanese clothes, huge breasts, choker, hakama short skirt,";
-// 島風 (艦これ)
-$prompt = "<lora:shimakaze_kantaicollection:0.75>, shimakaze,solo,long_hair,blonde_hair,hairband,blush,elbow gloves,microskirt,striped thighhighs,crop top,looking at viewer, ";
-// 鹿島（艦これ）
-// $prompt = "<lora:kashima_kantaicollection:0.75>, twintails, grey_hair, wavy_hair, blue_eyes, blush, long_hair, smile, hat, large_breasts, beret, epaulettes, military, military_uniform, skirt, uniform, gloves, pleated_skirt, miniskirt, white_gloves, grey_eyes, ";
-// 時雨（艦これ）
-// $prompt = "<lyco:shigure-lyco-nochekaiser:0.75>, shigure, shigure, ahoge, brown hair, blue eyes, braid, hair ornament, hair over shoulder, long hair, single braid, hair flaps, BREAK black gloves, black serafuku, black shirt, black skirt, fingerless gloves, gloves, neckerchief, pleated skirt, red neckerchief, sailor collar, school uniform, serafuku, shirt, skirt, white sailor collar,";
+    // 島風 (艦これ)
+    // $prompt = "<lora:shimakaze_kantaicollection:0.5>, shimakaze,solo,long_hair,blonde_hair,hairband,blush,elbow gloves,microskirt,striped thighhighs,crop top,looking at viewer, ";
+// 〇鹿島（艦これ）
+// $prompt = "<lora:kashima_kantaicollection:0.6>, twintails, (grey hair, wavy hair), blue eyes, blush, long hair, smile, hat, large breasts, beret, epaulettes, military, military_uniform, skirt, uniform, gloves, pleated_skirt, miniskirt, white_gloves, grey_eyes, ";
+// 〇時雨（艦これ）
+$prompt = "<lyco:shigure-lyco-nochekaiser:0.7>, shigure, shigure, ahoge, brown hair, blue eyes, braid, hair ornament, hair over shoulder, long hair, single braid, hair flaps, BREAK black gloves, black serafuku, black shirt, black skirt, fingerless gloves, gloves, neckerchief, pleated skirt, red neckerchief, sailor collar, school uniform, serafuku, shirt, skirt, white sailor collar,";
 // 村雨（艦これ）
     // $prompt = " <lora:murasame_kantaicollection:0.75>, long_hair, light_brown_hair, brown_eyes, red_eyes, ribbon, smile, serafuku, hair_ribbon, black_serafuku, twintails, two_side_up, hair_flaps, hair_ornament, 1girl, school_uniform, neckerchief, red_neckerchief,";
 // 大和（艦これ）
@@ -88,7 +88,7 @@ $prompt = "<lora:shimakaze_kantaicollection:0.75>, shimakaze,solo,long_hair,blon
 // 〇宵宮(原神)
 // $prompt = " <lora:yoimiya2:0.7>, yoimiya, (blond hair), ponytail, hair ornament, choker, tattoo, bandages, japanese clothes, sarashi, kimono, arm tattoo, red choker, orange kimono, chest tattoo, rope, shimenawa, sash, obi, hadanugi dousa, ";
 // 〇胡桃(原神)
-// $prompt = "  <lora:hutao1:0.75>, thick thighs, hu_tao, long hair, twintails, flower, hair between eyes, long sleeves, hat, flower-shaped pupils, black headwear, hat flower, very long hair, chinese clothes, black nails, nail polish, ghost, shorts, thighs, smile, ";
+// $prompt = "  <lora:hutao1:0.6>, thick thighs, hu_tao, long hair, twintails, flower, hair between eyes, long sleeves, hat, flower-shaped pupils, black headwear, hat flower, very long hair, chinese clothes, black nails, nail polish, ghost, shorts, thighs, smile, ";
 
 
 
