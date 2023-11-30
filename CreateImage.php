@@ -83,6 +83,29 @@ $api_count = 1;
 // 〇宵宮(原神)
 // $prompt = " <lora:yoimiya2:0.7>, yoimiya, (blond hair), ponytail, hair ornament, choker, tattoo, bandages, japanese clothes, sarashi, kimono, arm tattoo, red choker, orange kimono, chest tattoo, rope, shimenawa, sash, obi, hadanugi dousa, ";
 
+// 〇女天狗
+// $prompt = " <lora:nyotengu-lora-v1-128dim-20ep:0.4>, bangs, black hair, black thighhighs, choker, fishnet thighhighs, fishnets, gloves, hair ornament, hime cut, huge breasts, lips, long hair, mole under mouth, navel, nyotengu, purple eyes, thighhighs, underboob, shiny skin, ";
+// カフカ(スターレイル)
+$prompt = " <lora:kafka_1:0.55>, kafka, purple hair, sunglasses, eyewear on head, harness, black jacket, white shirt, collared shirt, long sleeves, white sleeves, purple gloves, black shorts, thigh strap, pantyhose, ";
+// アスタ(スターレイル)
+// $prompt = " <lora:Char-HonkaiSR-Asta:0.75>,asta \(honkai: star rail\), detached sleeves, high heels, high-waist skirt, sleeveless shirt, overskirt, anklet, thigh strap, bracelet, hairpin, belt, bowtie, choker, ";
+// ゼーレ(スターレイル)
+// $prompt = " <lora:SeeleV4:0.75>,(purple eyes:1.2), purple hair, very long hair, hair between eyes, (boots, black gloves, fingerless gloves, black footwear, blue butterfly,shorts, ),(milf:1.1),make up,parted lips, ";
+// トパーズ(スターレイル)
+// $prompt = " <lora:topaz_hsr:0.75>, mature female, multicolored hair, jelotopaz, hair ornament, sleeveless black cropped jacket. white cropped collared shirt, navel, underboob, cleavage, detached sleeves, black elbow gloves, belt, black knee boots, cotton pencil skirt, white thong, upskirt, pantyshot, sexy pose, ";
+// 停云(スターレイル)
+// $prompt = " <lora:StarRail_Tingyun_AP_v2:0.75>, a girl, tingyun, fox tail, long hair, dress, jewelry, detached sleeves, bracelet, cleavage, pelvic curtain, clothing cutout, medium breasts, tassel, hair ornament, sleeveless, cleavage cutout, black dress, thighs, sash, red ribbon, sleeveless dress, gold trim, bangle, ";
+// 姫子(スターレイル)
+// $prompt = " <lora:StarRail_Himeko_AP_v1:0．75>, yellow eyes, red hair, long hair, large breasts, single earring, white dress, black jacket, (golden rose on neck:1.1), ";
+// 符玄(スターレイル)
+// $prompt = "  <lora:fuxuan-str-v4:0.75>, fuxuan, fu xuan, (yellow eyes:1.5), forehead jewel, hair ornament, hair stick, long hair, low twintails, parted bangs, pink hair, twintails, BREAK bare shoulders, black dress, bridal gauntlets, detached collar, detached sleeves, dress, jewelry, neck ring, pantyhose, skirt, white pantyhose, white skirt, ";
+// 三月七(スターレイル)
+// $prompt = "  <lora:Mar-t1:0.75>, skirt, gloves, earrings, jewelry, bangs, blue eyes, pink eyes, black gloves, long sleeves, blue skirt, choker, fingerless gloves, white shirt, hair between eyes, short hair, single glove, pleated skirt, partially fingerless gloves, purple eyes, jacket, multicolored eyes, ";
+// 女主人公(スターレイル)
+// $prompt = "   <lora:stelleHsr:0.75>, stelle (honkai star rail), Stelle, (grey hair, silver hair, grey colored hair, flowing hair, grey long hair:1.2), (yellow eyes, yellow shining eyes:1.3), [apathetic:1.2], [medium breasts:1], (black jacket, rolled up sleeves. black gloves, white dress, black skirt, open jacket:1.15), ";
+
+
+
 
 
 ////////// 生成済み //////////
@@ -128,7 +151,12 @@ $api_count = 1;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 // エロ関連のプロンプト
-$prompt_nsfw = " <lora:funtoys_v1:0.25>, <lora:noaftersex:0.15>, SIGMA 24 mm F/1.4, (big breasts:1.2, sex toys:1.2, hole panties, panties pulled aside fuck ), (nsfw:1.2, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2 ), 20 years old ,";
+// <lora:funtoys_v1:0.1>,
+// <lora:dildoRiding2:0.05>,
+// <lora:noaftersex:0.2>, 
+// <lora:GodPussy1 v4:1>
+$prompt_nsfw = " <lora:GodPussy1 v4:0.08>, <lora:dildoRiding2:0.1>, Sex toys, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.2, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.2 ), 20 years old ,";
+// $prompt_nsfw = " <lora:funtoys_v1:0.25>, <lora:noaftersex:0.15>, SIGMA 24 mm F/1.4, (big breasts:1.2, sex toys:1.2, hole panties, panties pulled aside fuck ), (nsfw:1.2, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2 ), 20 years old ,";
 /////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 // テンプレート
 $prompt_temple = "((best quality)),(8k, RAW photo, best quality, masterpiece:1.2), High detail RAW color photo, professional photograph, (realistic, photo realistic:1.37), cinematic light, (finerly detailed face:1.2), (masterpiece:1.5), (best quality:1.2),being seen looking at a camera with one's whole body in front of the camera, ultra high res, highly detail face, ";
