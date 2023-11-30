@@ -140,7 +140,7 @@ function sendHttpRequest($imageData,$index) {
     }
 
     // httpレスポンスの応答結果をログに出力
-    file_put_contents('./response.log',print_r($response, true));
+    // file_put_contents('./response.log',print_r($response, true));
     // チャンネルを閉じる
     curl_close($ch);
 
