@@ -1,15 +1,21 @@
 <?php
 echo "RUN START\r\n";
 
-// 画像生成APIのエンドポイント
+// APIのエンドポイント(画像生成)
 $apiUrl = 'http://127.0.0.1:7860/sdapi/v1/img2img';
-// 画像解析APIのエンドポイント
+// APIのエンドポイント(画像解析)
 $apiUrlInterrogate = 'http://127.0.0.1:7860/sdapi/v1/interrogate';
 
+// 優一PC環境
 // 取り込む画像を保存しているフォルダ
 $folderPath = 'G:\Ai生成画像\import_image';
 // 出力した画像を保存するフォルダ
 $outputFolderPath = 'G:\Ai生成画像\output_image';
+
+// お父さんPC環境
+// $folderPath = 'C:\yuichiSD\AI画像\import_image';
+// // 出力した画像を保存するフォルダ
+// $outputFolderPath = 'C:\yuichiSD\AI画像\output_image';
 
 // 入力項目
 $denoising_strength = 0.8;
@@ -19,12 +25,10 @@ $steps = 40;
 $cfg_scale = 7;
 // $width = 720;
 // $height = 1024;
-// $width = 800;
-// $height = 1136;
-// $width = 864;
-// $height = 1228;
 $width = 800;
 $height = 1200;
+// $width = 1000;
+// $height = 1500;
 $batch_size= 1;
 $seed = -1;
 $sampler_index= "DPM++ SDE Karras";
@@ -32,35 +36,26 @@ $api_count = 1;
 
 
 
-
-// 健屋花那
-// $prompt = " <lora:sukoya_kana_v10:0.6>, white gloves, bandages, white apron, short sleeves, nurse, bandaged arm, wrist cuffs, white dress, fangs, full body, stationary restraints, ";
-// 【猫耳】フェリシア 
+// 〇健屋花那
+// $prompt = " <lora:sukoya_kana_v10:0.5>, gray hair, white gloves, bandages, white apron, short sleeves, nurse, bandaged arm, wrist cuffs, white dress, fangs, full body, stationary restraints, ";
+// 〇【猫耳】フェリシア 
 // $prompt = " <lora:FeliciaCosplayV2:0.75>, al ears, long hair, blue eyes, cat ears, animal hands, navel, open mouth, big hair, breasts, fang, smile, paw print, paw pose, large breasts, claws, :d, simple background, cat girl, very long hair, slit pupils, cat paws, ";
-// スリングショット水着
-// $prompt = " <lora:RegensburgSlingshotSwimsuitV1:0.75> slingshot swimsuit criss-cross halter solo huge breasts looking at viewer ass visible through thighs embarrassed blush hand on hip spiked choker bangs black choker thighs digust hairclip, ";
-// 猫耳イリヤ
-// $prompt = " <lora:IllyaBeastCosplay:0.75>,solo,large breasts,illyabeast cosplay,animal hands,paw gloves,cat ears,black thighhighs,ribbon,";
-// 白い腹だし制服
-// $prompt = "  <lora:CostumeJanusSchoolUniformV1:0.75>, white serafuku, long sleeves, white skirt, white pantyhose, crop top, double-breasted, groin,";
-// 巫女
-// $prompt = "1girl, solo,<lora:CostumeMikoJapaneseClothesShrineMaiden:0.75>, shrine maiden, cleavage, detached sleeves, white thighhighs, digust, blush, japanese clothes, huge breasts, choker, hakama short skirt,";
-    // 島風 (艦これ)
-    // $prompt = "<lora:shimakaze_kantaicollection:0.5>, shimakaze,solo,long_hair,blonde_hair,hairband,blush,elbow gloves,microskirt,striped thighhighs,crop top,looking at viewer, ";
+// 〇猫耳イリヤ
+// $prompt = " <lora:IllyaBeastCosplay:0.9>,solo,large breasts,illyabeast cosplay,animal hands,paw gloves,cat ears,black thighhighs,ribbon,";
+// 〇白い腹だし制服
+// $prompt = "  <lora:CostumeJanusSchoolUniformV1:0.9>, white serafuku, long sleeves, white skirt, white pantyhose, crop top, double-breasted, groin,";
+// 〇巫女
+// $prompt = " <lora:CostumeMikoJapaneseClothesShrineMaiden:0.75>, shrine maiden, cleavage, detached sleeves, white thighhighs, digust, blush, japanese clothes, huge breasts, choker, hakama short skirt,";
+// 〇ヨル・フォージャー
+// $prompt = " <lora:YorBlackDress:0.5>,black dress, solo, red eyes, black hair, gold hairband, gloves, large breasts, black thighhighs, boots, fingerless gloves, hairband, cleavage, hair ornament, black gloves, flower, hair flower, thigh boots, rose, earrings, long hair, black footwear, bangs, blush, gold earrings, high heel boots, ";
 // 〇鹿島（艦これ）
 // $prompt = "<lora:kashima_kantaicollection:0.6>, twintails, (grey hair, wavy hair), blue eyes, blush, long hair, smile, hat, large breasts, beret, epaulettes, military, military_uniform, skirt, uniform, gloves, pleated_skirt, miniskirt, white_gloves, grey_eyes, ";
 // 〇時雨（艦これ）
-$prompt = "<lyco:shigure-lyco-nochekaiser:0.7>, shigure, shigure, ahoge, brown hair, blue eyes, braid, hair ornament, hair over shoulder, long hair, single braid, hair flaps, BREAK black gloves, black serafuku, black shirt, black skirt, fingerless gloves, gloves, neckerchief, pleated skirt, red neckerchief, sailor collar, school uniform, serafuku, shirt, skirt, white sailor collar,";
-// 村雨（艦これ）
-    // $prompt = " <lora:murasame_kantaicollection:0.75>, long_hair, light_brown_hair, brown_eyes, red_eyes, ribbon, smile, serafuku, hair_ribbon, black_serafuku, twintails, two_side_up, hair_flaps, hair_ornament, 1girl, school_uniform, neckerchief, red_neckerchief,";
-// 大和（艦これ）
-    // $prompt = " <lora:yamato_kantaicollection:0.75>, long_hair, brown_hair, ponytail, hair_ornament, flower, hair_flower, brown_eyes, smile, breasts, cherry_blossoms, large_breasts, very_long_hair, blush, hair_between_eyes, 1girl, coat, hair_intakes, headgear, long_coat, long_sleeves, shoulder_cutout, sidelocks, white_coat, clothing_cutout, pleated_skirt, skirt, sleeveless_coat, white_skirt, collar, sakuramon, thighhighs, ";
-// ヨル・フォージャー
-// $prompt = " <lora:YorBlackDress:0.75>,black dress, solo, red eyes, black hair, gold hairband, gloves, large breasts, black thighhighs, boots, fingerless gloves, hairband, cleavage, hair ornament, black gloves, flower, hair flower, thigh boots, rose, earrings, long hair, black footwear, bangs, blush, gold earrings, high heel boots, ";
-// 天音かなた
-// $prompt = "  <lora:Beretkanata-V7:0.75>, beretkanatan, multicolored hair, partially fingerless black gloves, grey hair, full body, blue hair, white jacket, white beret, single hair intake, hair ornament, colored inner hair, single blue thighhigh, white sneakers, purple eyes, hairclip, single sock, thigh strap, long hair, hair rings, asymmetrical legwear, single black kneehigh, streaked hair, long sleeves, twintails, open jacket, star necklace, necklace, pleated skirt, asymmetrical bangs, uneven legwear, puffy long sleeves, smile, black dress, blue skirt, hooded jacket, blue belt, frills, thigh pouch,";
-// ヒンデンブルク(アズレン)
-// $prompt = " <lora:HindenCL:0.75>, hindencl, black leotard, underboob cutout, frills, black elbow gloves, covered navel, black skirt, black pantyhose, boots, demon horn, demon wings, demon tail, orange eyes, blonde hair, fox ears, cat eyes, ahoge, ornaments,";
+// $prompt = "<lyco:shigure-lyco-nochekaiser:0.7>, shigure, shigure, ahoge, brown hair, blue eyes, braid, hair ornament, hair over shoulder, long hair, single braid, hair flaps, BREAK black gloves, black serafuku, black shirt, black skirt, fingerless gloves, gloves, neckerchief, pleated skirt, red neckerchief, sailor collar, school uniform, serafuku, shirt, skirt, white sailor collar,";
+// 〇村雨（艦これ）
+// $prompt = " <lora:murasame_kantaicollection:0.5>, long_hair, light_brown_hair, brown_eyes, red_eyes, ribbon, smile, serafuku, hair_ribbon, black_serafuku, twintails, two_side_up, hair_flaps, hair_ornament, 1girl, school_uniform, neckerchief, red_neckerchief,";
+// 〇ヒンデンブルク(アズレン)
+// $prompt = " <lora:HindenCL:0.75>, red hair, hindencl, black leotard, underboob cutout, frills, black elbow gloves, covered navel, black skirt, black pantyhose, boots, demon horn, demon wings, demon tail, orange eyes, blonde hair, fox ears, cat eyes, ahoge, ornaments,";
 // 〇ネコエプロン
 // $prompt = "<lora:MerkuriaCatV1:0.75>,large breasts,merkuriacat,naked apron,animal hands,cat paws,black legwear,no shoes, :d,on_back,cat tail,anal tail,spread legs,";
 // 〇甘雨(原神)
@@ -87,9 +82,6 @@ $prompt = "<lyco:shigure-lyco-nochekaiser:0.7>, shigure, shigure, ahoge, brown h
 // $prompt = " <lora:sangonomiyakokomi1:0.75> , sangonomiya kokomi, thighhighs, navel, long hair, gloves, pink hair, white gloves, bow-shaped hair, wide sleeves, bangs, purple eyes, shorts, white thighhighs, frilled sleeves, bare shoulders, white shorts, bow, long sleeves, very long hair, multicolored hair, vision (genshin impact), frills, hair ornament, thighs, twintails, sandals, half gloves, bowtie, ";
 // 〇宵宮(原神)
 // $prompt = " <lora:yoimiya2:0.7>, yoimiya, (blond hair), ponytail, hair ornament, choker, tattoo, bandages, japanese clothes, sarashi, kimono, arm tattoo, red choker, orange kimono, chest tattoo, rope, shimenawa, sash, obi, hadanugi dousa, ";
-// 〇胡桃(原神)
-// $prompt = "  <lora:hutao1:0.6>, thick thighs, hu_tao, long hair, twintails, flower, hair between eyes, long sleeves, hat, flower-shaped pupils, black headwear, hat flower, very long hair, chinese clothes, black nails, nail polish, ghost, shorts, thighs, smile, ";
-
 
 
 
@@ -104,7 +96,8 @@ $prompt = "<lyco:shigure-lyco-nochekaiser:0.7>, shigure, shigure, ahoge, brown h
 // $prompt = "  <lora:JanusSchoolUniformV1:0.4>, <lora:school_hallway_v0.1:0.3>, <lora:wsal:0.3>, (school uniform:1.3), ";
 // ウェディング
 // $prompt = "  <lora:红莲婚纱dress:0.4>, <lora:bremerton_oath:0.4>, <lora:wedding:0.1>, (wedding dress:1.3), ";
-
+// 〇胡桃(原神)
+// $prompt = "  <lora:hutao1:0.6>, thick thighs, hu_tao, long hair, twintails, flower, hair between eyes, long sleeves, hat, flower-shaped pupils, black headwear, hat flower, very long hair, chinese clothes, black nails, nail polish, ghost, shorts, thighs, smile, ";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
@@ -122,7 +115,16 @@ $prompt = "<lyco:shigure-lyco-nochekaiser:0.7>, shigure, shigure, ahoge, brown h
     // $prompt = " <lora:keqing_genshin:0.3>,  long hair, purple hair, purple eyes, hair bun, cone hair bun, twintails, bangs, double bun, breasts, hair ornament, blush, braid, medium breasts, closed mouth, bare shoulders, dress, official alternate costume, strapless, black dress, bow, ribbon, strapless dress, cleavage, hair ribbon, ";
     // 神里綾華(原神)
     // $prompt = " <lora:kamisatoayaka1:0.5>, kamisato ayaka,long hair,blue hair,ponytail,hair ribbon, hair ornament,mole under eye, blue eyes,breastplate,armor, short sleeves,japanese clothes,blue skirt, tassel,gloves, arm guards, smile, ";
-
+    // 天音かなた
+    // $prompt = "  <lora:Beretkanata-V7:0.05>, beretkanatan, multicolored hair, partially fingerless black gloves, grey hair, full body, blue hair, white jacket, white beret, single hair intake, hair ornament, colored inner hair, single blue thighhigh, white sneakers, purple eyes, hairclip, single sock, thigh strap, long hair, hair rings, asymmetrical legwear, single black kneehigh, streaked hair, long sleeves, twintails, open jacket, star necklace, necklace, pleated skirt, asymmetrical bangs, uneven legwear, puffy long sleeves, smile, black dress, blue skirt, hooded jacket, blue belt, frills, thigh pouch,";
+    // 大和（艦これ）
+    // $prompt = " <lora:yamato_kantaicollection:0.9>, long_hair, brown_hair, ponytail, hair_ornament, flower, hair_flower, brown_eyes, smile, breasts, cherry_blossoms, large_breasts, very_long_hair, blush, hair_between_eyes, 1girl, coat, hair_intakes, headgear, long_coat, long_sleeves, shoulder_cutout, sidelocks, white_coat, clothing_cutout, pleated_skirt, skirt, sleeveless_coat, white_skirt, collar, sakuramon, thighhighs, ";
+    // 島風 (艦これ)
+    // $prompt = "<lora:shimakaze_kantaicollection:0.5>, shimakaze,solo,long_hair,blonde_hair,hairband,blush,elbow gloves,microskirt,striped thighhighs,crop top,looking at viewer, ";
+    // スリングショット水着
+    // $prompt = " <lora:RegensburgSlingshotSwimsuitV1:0.75>, slingshot, swimsuit, criss-cross, halter, huge, breasts, looking at viewer ass visible through thighs embarrassed blush hand on hip spiked choker bangs black choker thighs digust hairclip, ";
+    // 白露(スターレイル)
+    // $prompt = "  <lora:lora:0.8>,  dragon tail, ahoge, blue eyes, jewel-like eyes, extremely detailed eyes, extremely detailed face, smile, naughty face, two horns , Chinese clothes, eastern dragon, ";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 // エロ関連のプロンプト

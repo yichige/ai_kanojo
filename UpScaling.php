@@ -3,10 +3,18 @@ echo "RUN START\r\n";
 
 // APIのエンドポイント
 $apiUrl = 'http://127.0.0.1:7860/sdapi/v1/extra-single-image';
+
+// 優一PC環境
 // 取り込む画像を保存しているフォルダ
 $folderPath = 'G:\Ai生成画像\upscale_import_image';
 // 出力した画像を保存するフォルダ
 $outputFolderPath = 'G:\Ai生成画像\upscale_output_image';
+
+// お父さんPC環境
+// // 取り込む画像を保存しているフォルダ
+// $folderPath = 'C:\yuichiSD\AI画像\upscale_import_image';
+// // 出力した画像を保存するフォルダ
+// $outputFolderPath = 'C:\yuichiSD\AI画像\upscale_output_image';
 
 // 入力項目
 $resize_mode = 1;
