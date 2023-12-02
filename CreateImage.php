@@ -168,7 +168,7 @@ $prompt = "  <lora:hutao1:0.6>, black hair,thick thighs, hu_tao, long hair, twin
 //  vaginal object insertion,　 膣内挿入
 //  female masturbation,　女性のオナニー
 // pussy juice,   マンコジュース、
-$prompt_nsfw1 = " SIGMA 24 mm F/1.4, big breasts:1.2, (Cute pose, photogravure pose), show panties, 20 years old, ";
+$prompt_nsfw1 = " SIGMA 24 mm F/1.4, big breasts:1.2, (Cute pose, photogravure pose, show panties), show panties, 20 years old, ";
 $prompt_nsfw2 = " <lora:GodPussy1 v4:0.08>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
 $prompt_nsfw3 = " <lora:GodPussy1 v4:0.08>, <lora:dildoRiding2:0.2>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.3 ), 20 years old, ";
 
