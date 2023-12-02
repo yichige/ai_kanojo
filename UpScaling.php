@@ -46,6 +46,8 @@ $images = getImagesFromFolder($folderPath);
 
 // 取り込み画像が存在するか確認する。
 isImages($images);
+// 画像の配列をシャッフルする
+shuffle($images);
 
 // 生成済み画像を削除
 deleteImagesFromFolder($outputFolderPath);
