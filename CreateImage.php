@@ -8,11 +8,19 @@ $apiUrlInterrogate = 'http://127.0.0.1:7860/sdapi/v1/interrogate';
 
 // 優一PC環境
 // 取り込む画像を保存しているフォルダ
-$folderPath = 'G:\Ai生成画像\import_image';
+// $folderPath1 = 'G:\Ai生成画像\取り込み画像\import_image_1';
+// $folderPath2 = 'G:\Ai生成画像\取り込み画像\import_image_2';
+// $folderPath3 = 'G:\Ai生成画像\取り込み画像\import_image_3';
+
+$folderPath1 = 'G:\Ai生成画像\取り込み画像_test\import_image_1';
+$folderPath2 = 'G:\Ai生成画像\取り込み画像_test\import_image_2';
+$folderPath3 = 'G:\Ai生成画像\取り込み画像_test\import_image_3';
+
 // 出力した画像を保存するフォルダ
 $outputFolderPath = 'G:\Ai生成画像\output_image';
 
 // お父さんPC環境
+// 取り込む画像を保存しているフォルダ
 // $folderPath = 'C:\yuichiSD\AI画像\import_image';
 // // 出力した画像を保存するフォルダ
 // $outputFolderPath = 'C:\yuichiSD\AI画像\output_image';
@@ -86,7 +94,7 @@ $api_count = 1;
 // 〇女天狗
 // $prompt = " <lora:nyotengu-lora-v1-128dim-20ep:0.4>, bangs, black hair, black thighhighs, choker, fishnet thighhighs, fishnets, gloves, hair ornament, hime cut, huge breasts, lips, long hair, mole under mouth, navel, nyotengu, purple eyes, thighhighs, underboob, shiny skin, ";
 // カフカ(スターレイル)
-$prompt = " <lora:kafka_1:0.55>, kafka, purple hair, sunglasses, eyewear on head, harness, black jacket, white shirt, collared shirt, long sleeves, white sleeves, purple gloves, black shorts, thigh strap, pantyhose, ";
+// $prompt = " <lora:kafka_1:0.55>, kafka, purple hair, sunglasses, eyewear on head, harness, black jacket, white shirt, collared shirt, long sleeves, white sleeves, purple gloves, black shorts, thigh strap, pantyhose, ";
 // アスタ(スターレイル)
 // $prompt = " <lora:Char-HonkaiSR-Asta:0.75>,asta \(honkai: star rail\), detached sleeves, high heels, high-waist skirt, sleeveless shirt, overskirt, anklet, thigh strap, bracelet, hairpin, belt, bowtie, choker, ";
 // ゼーレ(スターレイル)
@@ -120,7 +128,7 @@ $prompt = " <lora:kafka_1:0.55>, kafka, purple hair, sunglasses, eyewear on head
 // ウェディング
 // $prompt = "  <lora:红莲婚纱dress:0.4>, <lora:bremerton_oath:0.4>, <lora:wedding:0.1>, (wedding dress:1.3), ";
 // 〇胡桃(原神)
-// $prompt = "  <lora:hutao1:0.6>, thick thighs, hu_tao, long hair, twintails, flower, hair between eyes, long sleeves, hat, flower-shaped pupils, black headwear, hat flower, very long hair, chinese clothes, black nails, nail polish, ghost, shorts, thighs, smile, ";
+$prompt = "  <lora:hutao1:0.6>, black hair,thick thighs, hu_tao, long hair, twintails, flower, hair between eyes, long sleeves, hat, flower-shaped pupils, black headwear, hat flower, very long hair, chinese clothes, black nails, nail polish, ghost, shorts, thighs, smile, ";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
@@ -152,15 +160,20 @@ $prompt = " <lora:kafka_1:0.55>, kafka, purple hair, sunglasses, eyewear on head
 /////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 // エロ関連のプロンプト
 // <lora:funtoys_v1:0.1>,
-// <lora:dildoRiding2:0.05>,
+// <lora:dildoRiding2:0.1>,
 // <lora:noaftersex:0.2>, 
 // <lora:GodPussy1 v4:1>
-$prompt_nsfw = " <lora:GodPussy1 v4:0.08>, <lora:dildoRiding2:0.1>, Sex toys, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.2, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.2 ), 20 years old ,";
-// $prompt_nsfw = " <lora:funtoys_v1:0.25>, <lora:noaftersex:0.15>, SIGMA 24 mm F/1.4, (big breasts:1.2, sex toys:1.2, hole panties, panties pulled aside fuck ), (nsfw:1.2, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2 ), 20 years old ,";
+//  vaginal object insertion,　 膣内挿入
+//  female masturbation,　女性のオナニー
+// pussy juice,   マンコジュース、
+$prompt_nsfw1 = " SIGMA 24 mm F/1.4, big breasts:1.2, (Cute pose, photogravure pose), show panties, 20 years old, ";
+$prompt_nsfw2 = " <lora:GodPussy1 v4:0.08>, <lora:dildoRiding2:0.1>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.2 ), 20 years old, ";
+$prompt_nsfw3 = " <lora:GodPussy1 v4:0.08>, <lora:dildoRiding2:0.2>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.2 ), 20 years old, ";
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 // テンプレート
-$prompt_temple = "((best quality)),(8k, RAW photo, best quality, masterpiece:1.2), High detail RAW color photo, professional photograph, (realistic, photo realistic:1.37), cinematic light, (finerly detailed face:1.2), (masterpiece:1.5), (best quality:1.2),being seen looking at a camera with one's whole body in front of the camera, ultra high res, highly detail face, ";
-$negative_prompt = " (logo, bad anatomy, bad hands, text, mole ), missing limb, bad hands, drink, glass, food, ";
+$prompt_temple = "((best quality)), (8k, RAW photo, best quality, masterpiece:1.2), High detail RAW color photo, professional photograph, (realistic, photo realistic:1.37), cinematic light, (finerly detailed face:1.2), (masterpiece:1.5), (best quality:1.2),being seen looking at a camera with one's whole body in front of the camera, ultra high res, highly detail face, ";
+$negative_prompt = " (logo, bad anatomy, bad hands, text, mole ), missing limb, bad hands, drink, glass, food, (have an object), ";
 $negative_prompt_temple = "paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, manboobs, (backlight:1.2), double navel, mutad arms, hused arms, neck lace, analog, analog effects, (sunglass:1.4), bad architecture, EasyNegative, ";
 
 
@@ -172,14 +185,19 @@ $negative_prompt_temple = "paintings, sketches, (worst quality:2), (low quality:
 $startTime = microtime(true);
 
 // 画像のパスを取得する処理
-$images = getImagesFromFolder($folderPath);
+$images1 = getImagesFromFolder($folderPath1);
+$images2 = getImagesFromFolder($folderPath2);
+$images3 = getImagesFromFolder($folderPath3);
 
 // 取り込み画像が存在するか確認する。
-isImages($images);
+isImages($images1);
+isImages($images2);
+isImages($images3);
 
 // 生成済み画像を削除
 deleteImagesFromFolder($outputFolderPath);
 
+// 出力先のフォルダがない場合はフォルダを生成する
 if (!file_exists($outputFolderPath)) {
     // 第三引数でパーミッションを指定できます（例：0777）
     mkdir($outputFolderPath, 0777, true);
@@ -188,7 +206,9 @@ if (!file_exists($outputFolderPath)) {
 
 // 取り込み画像の枚数分APIを実行する
 echo "api request start\r\n";
-foreach ($images as $index => $imagePath) {
+echo "folder1 \r\n";
+// 非エロの生成処理
+foreach ($images1 as $index => $imagePath) {
     echo "processing_image :".$imagePath . "\n";
     $base64Data = base64_encode(file_get_contents($imagePath));
 
@@ -199,10 +219,44 @@ foreach ($images as $index => $imagePath) {
     // 画像生成処理
     $while_count = 0;
     while ($while_count < $api_count) {
-        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt);
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'a', $prompt_nsfw1);
         $while_count++;
     }
 }
+
+echo "folder2 \r\n";
+// そこそこのエロ画像生成
+foreach ($images2 as $index => $imagePath) {
+    echo "processing_image :".$imagePath . "\n";
+    $base64Data = base64_encode(file_get_contents($imagePath));
+
+    $checkPrompt = "";
+
+    // 画像生成処理
+    $while_count = 0;
+    while ($while_count < $api_count) {
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'b', $prompt_nsfw2);
+        $while_count++;
+    }
+}
+
+echo "folder3 \r\n";
+// エロ画像生成処理
+foreach ($images3 as $index => $imagePath) {
+    echo "processing_image :".$imagePath . "\n";
+    $base64Data = base64_encode(file_get_contents($imagePath));
+
+    $checkPrompt = "";
+    
+    // 画像生成処理
+    $while_count = 0;
+    while ($while_count < $api_count) {
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'c', $prompt_nsfw3);
+        $while_count++;
+    }
+}
+
+
 
 // 処理時間を確認
 isTime($startTime);
@@ -217,7 +271,7 @@ exit;
 // ************************************************************************
 
 // APIにリクエストする処理
-function sendHttpRequest($imageData,$index,$while_count,$checkPrompt) {
+function sendHttpRequest($imageData,$index,$while_count,$checkPrompt,$folderMark,$p_nsfw) {
     global $apiUrl;
     global $outputFolderPath;
     global $denoising_strength;
@@ -231,7 +285,6 @@ function sendHttpRequest($imageData,$index,$while_count,$checkPrompt) {
     global $prompt;
     global $negative_prompt;
     global $prompt_temple;
-    global $prompt_nsfw;
     global $negative_prompt_temple;
     global $seed;
     global $sampler_index;
@@ -251,7 +304,7 @@ function sendHttpRequest($imageData,$index,$while_count,$checkPrompt) {
         "image_cfg_scale"=> $image_cfg_scale,
         "resize_mode"=> $resize_mode,
         "inpaint_full_res"=> true,
-        "prompt"=> $prompt_temple.$prompt.$prompt_nsfw.$checkPrompt,
+        "prompt"=> $prompt_temple.$prompt.$p_nsfw.$checkPrompt,
         "negative_prompt"=> $negative_prompt.$negative_prompt_temple,
         "seed"=> $seed,
         "sampler_index"=> $sampler_index,
@@ -276,7 +329,8 @@ function sendHttpRequest($imageData,$index,$while_count,$checkPrompt) {
     if($statusCode == '200'){
         // レスポンスから画像データを取り出して保存する
         foreach($response->images as $index2 => $image){
-            $outputFileName = $outputFolderPath . "/" . ($index + 1) ."_".$while_count."_". $index2  . ".png";
+            $outputFileName = $outputFolderPath . "/" . ($index + 1) ."_". $while_count ."_". $index2  . ".png";
+            $outputFileName = $outputFolderPath . "/" . $folderMark ."_". ($index + 1) ."_".$while_count."_". $index2  . ".png";
             file_put_contents($outputFileName, base64_decode($image));
         }
     }else{
