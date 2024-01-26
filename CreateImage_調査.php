@@ -6,7 +6,7 @@ $apiUrl = 'http://127.0.0.1:7860/sdapi/v1/img2img';
 // APIのエンドポイント(画像解析)
 $apiUrlInterrogate = 'http://127.0.0.1:7860/sdapi/v1/interrogate';
 
-//////// 優一PC環境 ////////
+// 優一PC環境
 // 取り込む画像を保存しているフォルダ
 // $folderPath1 = 'G:\Ai生成画像\取り込み画像\import_image_1';
 // $folderPath2 = 'G:\Ai生成画像\取り込み画像\import_image_2';
@@ -15,6 +15,12 @@ $apiUrlInterrogate = 'http://127.0.0.1:7860/sdapi/v1/interrogate';
 $folderPath1 = 'G:\Ai生成画像\取り込み画像_test\import_image_1';
 $folderPath2 = 'G:\Ai生成画像\取り込み画像_test\import_image_2';
 $folderPath3 = 'G:\Ai生成画像\取り込み画像_test\import_image_3';
+$folderPath4 = 'G:\Ai生成画像\取り込み画像_test\import_image_4';
+$folderPath5 = 'G:\Ai生成画像\取り込み画像_test\import_image_5';
+$folderPath6 = 'G:\Ai生成画像\取り込み画像_test\import_image_6';
+$folderPath7 = 'G:\Ai生成画像\取り込み画像_test\import_image_7';
+$folderPath8 = 'G:\Ai生成画像\取り込み画像_test\import_image_8';
+$folderPath9 = 'G:\Ai生成画像\取り込み画像_test\import_image_9';
 
 // $folderPath1 = 'G:\Ai生成画像\取り込み画像_追加\import_image_1';
 // $folderPath2 = 'G:\Ai生成画像\取り込み画像_追加\import_image_2';
@@ -23,12 +29,12 @@ $folderPath3 = 'G:\Ai生成画像\取り込み画像_test\import_image_3';
 // 出力した画像を保存するフォルダ
 $outputFolderPath = 'G:\Ai生成画像\output_image';
 
-//////// お父さんPC環境 ////////
-// 取り込む画像を保存しているフォルダ
+// お父さんPC環境
+// // 取り込む画像を保存しているフォルダ
 // $folderPath1 = 'C:\yuichiSD\AI画像\取り込み画像\import_image_1';
 // $folderPath2 = 'C:\yuichiSD\AI画像\取り込み画像\import_image_2';
 // $folderPath3 = 'C:\yuichiSD\AI画像\取り込み画像\import_image_3';
-// 出力した画像を保存するフォルダ
+// // // 出力した画像を保存するフォルダ
 // $outputFolderPath = 'C:\yuichiSD\AI画像\output_image';
 
 // 入力項目
@@ -85,9 +91,9 @@ $api_count = 1;
     // 〇ボンデージ(あみあみ)
     // $prompt = " <lora:bondage:0.4>, large breasts, very long hair, bondage outfit, harness, o-ring, cross pasties, no panties, crotch strap, groin, large breasts, collarbone, bare arms, metal collar, light smile, dappled sunlight, metal_collar, chain, jewelry, ";
 // 〇サンタ衣装
-$prompt = " <lora:santa_outfit:0.25>, off-shoulder, wearing sntdrs, red santa dress, short dress, fur, belt, cameltoe, black thighhighs, garter straps, long hair, ";
+// $prompt = " <lora:santa_outfit:0.25>, off-shoulder, wearing sntdrs, red santa dress, short dress, fur, belt, cameltoe, black thighhighs, garter straps, long hair, ";
 // 〇クラウンクッパ
-// $prompt = " <lora:bows1:0.7>,  blonde hair, highres, jewelry, long hair, wedding dress, stocking,crown, horns, spike necklace, spike turtle shell, high heels, ";
+$prompt = " <lora:bows1:0.7>,  blonde hair, highres, jewelry, long hair, wedding dress, stocking,crown, horns, spike necklace, spike turtle shell, high heels, ";
     // 〇珊瑚宮心海(原神)
     // $prompt = " <lora:sangonomiyakokomi1:0.75> , sangonomiya kokomi, thighhighs, navel, long hair, gloves, pink hair, white gloves, bow-shaped hair, wide sleeves, bangs, purple eyes, shorts, white thighhighs, frilled sleeves, bare shoulders, white shorts, bow, long sleeves, very long hair, multicolored hair, vision (genshin impact), frills, hair ornament, thighs, twintails, sandals, half gloves, bowtie, ";
     // 〇宵宮(原神)
@@ -113,6 +119,10 @@ $prompt = " <lora:santa_outfit:0.25>, off-shoulder, wearing sntdrs, red santa dr
 // $prompt = "  <lora:Mar-t1:0.75>, skirt, gloves, earrings, jewelry, bangs, blue eyes, pink eyes, black gloves, long sleeves, blue skirt, choker, fingerless gloves, white shirt, hair between eyes, short hair, single glove, pleated skirt, partially fingerless gloves, purple eyes, jacket, multicolored eyes, ";
 // 女主人公(スターレイル)
 // $prompt = "   <lora:stelleHsr:0.75>, stelle (honkai star rail), Stelle, (grey hair, silver hair, grey colored hair, flowing hair, grey long hair:1.2), (yellow eyes, yellow shining eyes:1.3), [apathetic:1.2], [medium breasts:1], (black jacket, rolled up sleeves. black gloves, white dress, black skirt, open jacket:1.15), ";
+
+
+
+
 
 ////////// 生成済み //////////
 // メイド服
@@ -166,21 +176,40 @@ $prompt = " <lora:santa_outfit:0.25>, off-shoulder, wearing sntdrs, red santa dr
 // <lora:funtoys_v1:0.1>,
 // <lora:dildoRiding2:0.1>,
 // <lora:noaftersex:0.2>, 
-// <lora:GodPussy1 v4:1>
+//  <lora:BetterPussyV0.1.0-LR00025-Locan:1>
 //  vaginal object insertion,　 膣内挿入
 //  female masturbation,　女性のオナニー
 // pussy juice,   マンコジュース、
-
 // $prompt_nsfw1 = "  <lora:PSCowgirl:0.9>, <lora:PSCowgirl:0.9>, (squatting cowgirl position:1.2, squatting:1.2), 1girl, 1boy, penis, pov,  looking at viewer, SIGMA 24 mm F/1.4, big breasts:1.2, 20 years old, ";
 // $prompt_nsfw1 = "  <lora:qqq-standing_doggystyle-v2:0.9>, 1girl, 1boy, penis, pov, standing sex, doggystyle, SIGMA 24 mm F/1.4, big breasts:1.2, 20 years old, ";
+// $prompt_nsfw2 = "  <lora:m99_labiaplasty_pussy_2:0.25>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+
 $prompt_nsfw1 = " SIGMA 24 mm F/1.4, big breasts:1.2, (Cute pose, photogravure pose, show panties), show panties, 20 years old, ";
-// $prompt_nsfw2 = "  <lora:m99_labiaplasty_pussy_2:0.3>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
-// $prompt_nsfw3 = "  <lora:m99_labiaplasty_pussy_2:0.3>, <lora:dildoRiding2:0.4>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.3 ), 20 years old, ";
+// $prompt_nsfw2 = "  <lora:Fucked Silly:0.2>,<lora:m99_labiaplasty_pussy_2:0.25>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+// $prompt_nsfw3 = "  <lora:BetterPussyV0.1.0-LR00025-Locan:0.6>, <lora:dildoRiding2:0.51>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.3 ), 20 years old, ";
 
-$prompt_nsfw2 = "  <lora:Fucked Silly:0.2>,<lora:m99_labiaplasty_pussy_2:0.5>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
-// $prompt_nsfw25 = "  <lora:Fucked Silly:0.2>,<lora:m99_labiaplasty_pussy_2:0.5>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+// $prompt_nsfw4 = "  <lora:Fucked Silly:0.3>,<lora:m99_labiaplasty_pussy_2:0.25>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+// $prompt_nsfw5 = "  <lora:BetterPussyV0.1.0-LR00025-Locan:0.6>, <lora:dildoRiding2:0.52>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.3 ), 20 years old, ";
 
-$prompt_nsfw3 = "  <lora:BetterPussyV0.1.0-LR00025-Locan:0.65>, <lora:dildoRiding2:0.35>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.3 ), 20 years old, ";
+// $prompt_nsfw6 = "  <lora:Fucked Silly:0.4>,<lora:m99_labiaplasty_pussy_2:0.25>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+// $prompt_nsfw7 = "  <lora:BetterPussyV0.1.0-LR00025-Locan:0.6>, <lora:dildoRiding2:0.53>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.3 ), 20 years old, ";
+
+// $prompt_nsfw8 = "  <lora:Fucked Silly:0.5>,<lora:m99_labiaplasty_pussy_2:0.25>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+// $prompt_nsfw9 = "  <lora:BetterPussyV0.1.0-LR00025-Locan:0.6>, <lora:dildoRiding2:0.54>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.3 ), 20 years old, ";
+
+
+$prompt_nsfw2 = "  <lora:BetterPussyV0.1.0-LR00025-Locan:0.6>,<lora:after_sex_v2:0.5>,cumdrip, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+$prompt_nsfw3 = "  <lora:raised-doggystyle-v3-wasabiya:0.5>,1girl,1boy,sex,nude,hetero,large breasts,sweat,(big breasts:1.2), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+
+$prompt_nsfw4 = "  <lora:BetterPussyV0.1.0-LR00025-Locan:0.6>,<lora:after_sex_v2:0.6>,cumdrip,  SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+$prompt_nsfw5 = "  <lora:raised-doggystyle-v3-wasabiya:0.6>,1girl,1boy,sex,nude,hetero,large breasts,sweat,(big breasts:1.2), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+
+$prompt_nsfw6 = "  <lora:BetterPussyV0.1.0-LR00025-Locan:0.6>,<lora:after_sex_v2:0.7>,cumdrip,  SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+$prompt_nsfw7 = "  <lora:raised-doggystyle-v3-wasabiya:0.7>,1girl,1boy,sex,nude,hetero,large breasts,sweat,(big breasts:1.2), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+
+$prompt_nsfw8 = "  <lora:BetterPussyV0.1.0-LR00025-Locan:0.6>,<lora:after_sex_v2:0.8>,cumdrip,  SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+$prompt_nsfw9 = "  <lora:raised-doggystyle-v3-wasabiya:0.8>,1girl,1boy,sex,nude,hetero,large breasts,sweat,(big breasts:1.2), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 // テンプレート
@@ -200,11 +229,23 @@ $startTime = microtime(true);
 $images1 = getImagesFromFolder($folderPath1);
 $images2 = getImagesFromFolder($folderPath2);
 $images3 = getImagesFromFolder($folderPath3);
+$images4 = getImagesFromFolder($folderPath4);
+$images5 = getImagesFromFolder($folderPath5);
+$images6 = getImagesFromFolder($folderPath6);
+$images7 = getImagesFromFolder($folderPath7);
+$images8 = getImagesFromFolder($folderPath8);
+$images9 = getImagesFromFolder($folderPath9);
 
 // 取り込み画像が存在するか確認する。
 isImages($images1);
 isImages($images2);
 isImages($images3);
+isImages($images4);
+isImages($images5);
+isImages($images6);
+isImages($images7);
+isImages($images8);
+isImages($images9);
 
 // 生成済み画像を削除
 deleteImagesFromFolder($outputFolderPath);
@@ -231,7 +272,7 @@ foreach ($images1 as $index => $imagePath) {
     // 画像生成処理
     $while_count = 0;
     while ($while_count < $api_count) {
-        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'a', $prompt_nsfw1);
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'f1', $prompt_nsfw1);
         $while_count++;
     }
 }
@@ -247,7 +288,7 @@ foreach ($images2 as $index => $imagePath) {
     // 画像生成処理
     $while_count = 0;
     while ($while_count < $api_count) {
-        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'b', $prompt_nsfw2);
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'f2', $prompt_nsfw2);
         $while_count++;
     }
 }
@@ -263,12 +304,106 @@ foreach ($images3 as $index => $imagePath) {
     // 画像生成処理
     $while_count = 0;
     while ($while_count < $api_count) {
-        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'c', $prompt_nsfw3);
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'f3', $prompt_nsfw3);
         $while_count++;
     }
 }
 
+echo "folder4 \r\n";
+// エロ画像生成処理
+foreach ($images4 as $index => $imagePath) {
+    echo "processing_image :".$imagePath . "\n";
+    $base64Data = base64_encode(file_get_contents($imagePath));
 
+    $checkPrompt = "";
+    
+    // 画像生成処理
+    $while_count = 0;
+    while ($while_count < $api_count) {
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'f4', $prompt_nsfw4);
+        $while_count++;
+    }
+}
+
+echo "folder5 \r\n";
+// エロ画像生成処理
+foreach ($images5 as $index => $imagePath) {
+    echo "processing_image :".$imagePath . "\n";
+    $base64Data = base64_encode(file_get_contents($imagePath));
+
+    $checkPrompt = "";
+    
+    // 画像生成処理
+    $while_count = 0;
+    while ($while_count < $api_count) {
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'f5', $prompt_nsfw5);
+        $while_count++;
+    }
+}
+
+echo "folder6 \r\n";
+// エロ画像生成処理
+foreach ($images6 as $index => $imagePath) {
+    echo "processing_image :".$imagePath . "\n";
+    $base64Data = base64_encode(file_get_contents($imagePath));
+
+    $checkPrompt = "";
+    
+    // 画像生成処理
+    $while_count = 0;
+    while ($while_count < $api_count) {
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'f6', $prompt_nsfw6);
+        $while_count++;
+    }
+}
+
+echo "folder7 \r\n";
+// エロ画像生成処理
+foreach ($images7 as $index => $imagePath) {
+    echo "processing_image :".$imagePath . "\n";
+    $base64Data = base64_encode(file_get_contents($imagePath));
+
+    $checkPrompt = "";
+    
+    // 画像生成処理
+    $while_count = 0;
+    while ($while_count < $api_count) {
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'f7', $prompt_nsfw7);
+        $while_count++;
+    }
+}
+
+echo "folder8 \r\n";
+// エロ画像生成処理
+foreach ($images8 as $index => $imagePath) {
+    echo "processing_image :".$imagePath . "\n";
+    $base64Data = base64_encode(file_get_contents($imagePath));
+
+    $checkPrompt = "";
+    
+    // 画像生成処理
+    $while_count = 0;
+    while ($while_count < $api_count) {
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'f8', $prompt_nsfw8);
+        $while_count++;
+    }
+}
+
+echo "folder9 \r\n";
+// エロ画像生成処理
+foreach ($images9 as $index => $imagePath) {
+    echo "processing_image :".$imagePath . "\n";
+    $base64Data = base64_encode(file_get_contents($imagePath));
+
+    $checkPrompt = "";
+    
+    // 画像生成処理
+    $while_count = 0;
+    while ($while_count < $api_count) {
+        $response = sendHttpRequest($base64Data,$index,$while_count,$checkPrompt,'f9', $prompt_nsfw9);
+        $while_count++;
+    }
+}
 
 // 処理時間を確認
 isTime($startTime);

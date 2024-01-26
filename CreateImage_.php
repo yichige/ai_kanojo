@@ -6,7 +6,7 @@ $apiUrl = 'http://127.0.0.1:7860/sdapi/v1/img2img';
 // APIのエンドポイント(画像解析)
 $apiUrlInterrogate = 'http://127.0.0.1:7860/sdapi/v1/interrogate';
 
-//////// 優一PC環境 ////////
+// 優一PC環境
 // 取り込む画像を保存しているフォルダ
 // $folderPath1 = 'G:\Ai生成画像\取り込み画像\import_image_1';
 // $folderPath2 = 'G:\Ai生成画像\取り込み画像\import_image_2';
@@ -23,12 +23,12 @@ $folderPath3 = 'G:\Ai生成画像\取り込み画像_test\import_image_3';
 // 出力した画像を保存するフォルダ
 $outputFolderPath = 'G:\Ai生成画像\output_image';
 
-//////// お父さんPC環境 ////////
-// 取り込む画像を保存しているフォルダ
+// お父さんPC環境
+// // 取り込む画像を保存しているフォルダ
 // $folderPath1 = 'C:\yuichiSD\AI画像\取り込み画像\import_image_1';
 // $folderPath2 = 'C:\yuichiSD\AI画像\取り込み画像\import_image_2';
 // $folderPath3 = 'C:\yuichiSD\AI画像\取り込み画像\import_image_3';
-// 出力した画像を保存するフォルダ
+// // // 出力した画像を保存するフォルダ
 // $outputFolderPath = 'C:\yuichiSD\AI画像\output_image';
 
 // 入力項目
@@ -59,7 +59,7 @@ $api_count = 1;
 // 〇白い腹だし制服
 // $prompt = "  <lora:CostumeJanusSchoolUniformV1:0.48>, (white serafuku, long sleeves, white skirt), white pantyhose, crop top, double-breasted, groin,";
 // 〇巫女
-// $prompt = " <lora:CostumeMikoJapaneseClothesShrineMaiden:0.75>, shrine maiden, cleavage, detached sleeves, white thighhighs, digust, blush, japanese clothes, huge breasts, choker, hakama short skirt,";
+$prompt = " <lora:CostumeMikoJapaneseClothesShrineMaiden:0.75>, shrine maiden, cleavage, detached sleeves, white thighhighs, digust, blush, japanese clothes, huge breasts, choker, hakama short skirt,";
     // 〇ヨル・フォージャー
     // $prompt = " <lora:YorBlackDress:0.5>,black dress, solo, red eyes, black hair, gold hairband, gloves, large breasts, black thighhighs, boots, fingerless gloves, hairband, cleavage, hair ornament, black gloves, flower, hair flower, thigh boots, rose, earrings, long hair, black footwear, bangs, blush, gold earrings, high heel boots, ";
 // 〇鹿島（艦これ）
@@ -85,9 +85,9 @@ $api_count = 1;
     // 〇ボンデージ(あみあみ)
     // $prompt = " <lora:bondage:0.4>, large breasts, very long hair, bondage outfit, harness, o-ring, cross pasties, no panties, crotch strap, groin, large breasts, collarbone, bare arms, metal collar, light smile, dappled sunlight, metal_collar, chain, jewelry, ";
 // 〇サンタ衣装
-$prompt = " <lora:santa_outfit:0.25>, off-shoulder, wearing sntdrs, red santa dress, short dress, fur, belt, cameltoe, black thighhighs, garter straps, long hair, ";
+// $prompt = " <lora:santa_outfit:0.25>, off-shoulder, wearing sntdrs, red santa dress, short dress, fur, belt, cameltoe, black thighhighs, garter straps, long hair, ";
 // 〇クラウンクッパ
-// $prompt = " <lora:bows1:0.7>,  blonde hair, highres, jewelry, long hair, wedding dress, stocking,crown, horns, spike necklace, spike turtle shell, high heels, ";
+// $prompt = " <lora:bows1:0.8>,  blonde hair, highres, jewelry, long hair, wedding dress, stocking,crown, horns, spike necklace, spike turtle shell, high heels, ";
     // 〇珊瑚宮心海(原神)
     // $prompt = " <lora:sangonomiyakokomi1:0.75> , sangonomiya kokomi, thighhighs, navel, long hair, gloves, pink hair, white gloves, bow-shaped hair, wide sleeves, bangs, purple eyes, shorts, white thighhighs, frilled sleeves, bare shoulders, white shorts, bow, long sleeves, very long hair, multicolored hair, vision (genshin impact), frills, hair ornament, thighs, twintails, sandals, half gloves, bowtie, ";
     // 〇宵宮(原神)
@@ -113,6 +113,10 @@ $prompt = " <lora:santa_outfit:0.25>, off-shoulder, wearing sntdrs, red santa dr
 // $prompt = "  <lora:Mar-t1:0.75>, skirt, gloves, earrings, jewelry, bangs, blue eyes, pink eyes, black gloves, long sleeves, blue skirt, choker, fingerless gloves, white shirt, hair between eyes, short hair, single glove, pleated skirt, partially fingerless gloves, purple eyes, jacket, multicolored eyes, ";
 // 女主人公(スターレイル)
 // $prompt = "   <lora:stelleHsr:0.75>, stelle (honkai star rail), Stelle, (grey hair, silver hair, grey colored hair, flowing hair, grey long hair:1.2), (yellow eyes, yellow shining eyes:1.3), [apathetic:1.2], [medium breasts:1], (black jacket, rolled up sleeves. black gloves, white dress, black skirt, open jacket:1.15), ";
+
+
+
+
 
 ////////// 生成済み //////////
 // メイド服
@@ -170,22 +174,17 @@ $prompt = " <lora:santa_outfit:0.25>, off-shoulder, wearing sntdrs, red santa dr
 //  vaginal object insertion,　 膣内挿入
 //  female masturbation,　女性のオナニー
 // pussy juice,   マンコジュース、
-
 // $prompt_nsfw1 = "  <lora:PSCowgirl:0.9>, <lora:PSCowgirl:0.9>, (squatting cowgirl position:1.2, squatting:1.2), 1girl, 1boy, penis, pov,  looking at viewer, SIGMA 24 mm F/1.4, big breasts:1.2, 20 years old, ";
 // $prompt_nsfw1 = "  <lora:qqq-standing_doggystyle-v2:0.9>, 1girl, 1boy, penis, pov, standing sex, doggystyle, SIGMA 24 mm F/1.4, big breasts:1.2, 20 years old, ";
 $prompt_nsfw1 = " SIGMA 24 mm F/1.4, big breasts:1.2, (Cute pose, photogravure pose, show panties), show panties, 20 years old, ";
-// $prompt_nsfw2 = "  <lora:m99_labiaplasty_pussy_2:0.3>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
-// $prompt_nsfw3 = "  <lora:m99_labiaplasty_pussy_2:0.3>, <lora:dildoRiding2:0.4>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.3 ), 20 years old, ";
-
-$prompt_nsfw2 = "  <lora:Fucked Silly:0.2>,<lora:m99_labiaplasty_pussy_2:0.5>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
-// $prompt_nsfw25 = "  <lora:Fucked Silly:0.2>,<lora:m99_labiaplasty_pussy_2:0.5>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
-
-$prompt_nsfw3 = "  <lora:BetterPussyV0.1.0-LR00025-Locan:0.65>, <lora:dildoRiding2:0.35>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.3 ), 20 years old, ";
+$prompt_nsfw2 = " <lora:GodPussy1 v4:0.3>, SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties), (nsfw:1.3, after sex:1.2, cum:1.3 ), 20 years old, ";
+// $prompt_nsfw3 = " <lora:GodPussy1 v4:0.05>, <lora:dildoRiding2:0.05>, (vaginal object insertion:1.15), SIGMA 24 mm F/1.4, (big breasts:1.2, hole panties ,beautiful pussy ), (nsfw:1.3, after sex:1.2, rotor insertion:1.2, Dildos insertion:1.2, cum:1.3 ), 20 years old, ";
+$prompt_nsfw3 = " <lora:funtoys_v1:0.2>,((vaginal object insertion:1.15)), SIGMA 24 mm F/1.4, (big breasts:1.2,), (nsfw:1.1, cum:1.3 ), 20 years old, ";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 // テンプレート
 $prompt_temple = "((best quality)), (8k, RAW photo, best quality, masterpiece:1.2), High detail RAW color photo, professional photograph, (realistic, photo realistic:1.37), cinematic light, (finerly detailed face:1.2), (masterpiece:1.5), (best quality:1.2),being seen looking at a camera with one's whole body in front of the camera, ultra high res, highly detail face, ";
-$negative_prompt = " (logo, bad anatomy, bad hands, text, mole ), missing limb, bad hands, drink, glass, food, (have an object),(anal object insertion), ";
+$negative_prompt = " ((mole,Black spots)), (logo, bad anatomy, bad hands, text, mole ), missing limb, bad hands, drink, glass, food, (have an object), ((anal object insertion)), ";
 $negative_prompt_temple = "paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, manboobs, (backlight:1.2), double navel, mutad arms, hused arms, neck lace, analog, analog effects, (sunglass:1.4), bad architecture, EasyNegative, ";
 
 
