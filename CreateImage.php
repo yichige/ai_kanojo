@@ -48,78 +48,51 @@ $seed = -1;
 $sampler_index= "DPM++ SDE Karras";
 $api_count = 1;
 
-// 第1弾
-// 〇白い腹だし制服
-// $prompt = "  <lora:CostumeJanusSchoolUniformV1:0.48>, (white serafuku, long sleeves, white skirt), white pantyhose, crop top, double-breasted, groin,";
-
-// 第2弾
-    // 〇女天狗
-    // $prompt = " <lora:nyotengu-lora-v1-128dim-20ep:0.4>, bangs, black hair, black thighhighs, choker, fishnet thighhighs, fishnets, gloves, hair ornament, hime cut, huge breasts, lips, long hair, mole under mouth, navel, nyotengu, purple eyes, thighhighs, underboob, shiny skin, ";
-    // カフカ(スターレイル)
-    // $prompt = " <lora:kafka_1:0.55>, (kafka, purple hair, sunglasses, eyewear on head, harness, black jacket, white shirt, collared shirt, long sleeves, white sleeves, purple gloves, black shorts, thigh strap, pantyhose), ";
-    // アスタ(スターレイル)
-    // $prompt = " <lora:Char-HonkaiSR-Asta:0.75>,asta \(honkai: star rail\), detached sleeves, high heels, high-waist skirt, sleeveless shirt, overskirt, anklet, thigh strap, bracelet, hairpin, belt, bowtie, choker, ";
-// ゼーレ(スターレイル)
-// $prompt = " <lora:SeeleV4:0.75>,(purple eyes:1.2), purple hair, very long hair, hair between eyes, (boots, black gloves, fingerless gloves, black footwear, blue butterfly,shorts, ),(milf:1.1),make up,parted lips, ";
-// トパーズ(スターレイル)
-// $prompt = " <lora:topaz_hsr:0.75>, mature female, multicolored hair, jelotopaz, hair ornament, sleeveless black cropped jacket. white cropped collared shirt, navel, underboob, cleavage, detached sleeves, black elbow gloves, belt, black knee boots, cotton pencil skirt, white thong, upskirt, pantyshot, sexy pose, ";
-// 停云(スターレイル)
-// $prompt = " <lora:StarRail_Tingyun_AP_v2:0.75>, a girl, tingyun, fox tail, long hair, dress, jewelry, detached sleeves, bracelet, cleavage, pelvic curtain, clothing cutout, medium breasts, tassel, hair ornament, sleeveless, cleavage cutout, black dress, thighs, sash, red ribbon, sleeveless dress, gold trim, bangle, ";
-
-// 姫子(スターレイル)
-// $prompt = " <lora:StarRail_Himeko_AP_v1:0．75>, yellow eyes, red hair, long hair, large breasts, single earring, white dress, black jacket, (golden rose on neck:1.1), ";
-// 符玄(スターレイル)
-// $prompt = "  <lora:fuxuan-str-v4:0.75>, fuxuan, fu xuan, (yellow eyes:1.5), forehead jewel, hair ornament, hair stick, long hair, low twintails, parted bangs, pink hair, twintails, BREAK bare shoulders, black dress, bridal gauntlets, detached collar, detached sleeves, dress, jewelry, neck ring, pantyhose, skirt, white pantyhose, white skirt, ";
-// 三月七(スターレイル)
-// $prompt = "  <lora:Mar-t1:0.75>, skirt, gloves, earrings, jewelry, bangs, blue eyes, pink eyes, black gloves, long sleeves, blue skirt, choker, fingerless gloves, white shirt, hair between eyes, short hair, single glove, pleated skirt, partially fingerless gloves, purple eyes, jacket, multicolored eyes, ";
-// 女主人公(スターレイル)
-// $prompt = "   <lora:stelleHsr:0.75>, stelle (honkai star rail), Stelle, (grey hair, silver hair, grey colored hair, flowing hair, grey long hair:1.2), (yellow eyes, yellow shining eyes:1.3), [apathetic:1.2], [medium breasts:1], (black jacket, rolled up sleeves. black gloves, white dress, black skirt, open jacket:1.15), ";
-
 
 ////////////////////////
 // 艦隊これくしょん
 ////////////////////////
 
-// グラーフ・ツェッペリン(艦これ)
-// $prompt = " <lora:graf_zeppelin_kantaicollection:0.6>, ((blonde_hair)), (twintails, long_hair, sidelocks, blue_eyes, capelet, large_breasts, hat, peaked_cap, necktie, military, cross, blush, 1girl, looking_at_viewer, military_uniform, uniform, iron_cross, black_gloves, gloves),";
+    // グラーフ・ツェッペリン(艦これ)
+    // $prompt = " <lora:graf_zeppelin_kantaicollection:0.6>, ((blonde_hair)), (twintails, long_hair, sidelocks, blue_eyes, capelet, large_breasts, hat, peaked_cap, necktie, military, cross, blush, 1girl, looking_at_viewer, military_uniform, uniform, iron_cross, black_gloves, gloves),";
 // プリンツ・オイゲン(艦これ)
-// $prompt = " <lora:prinz_eugen_kantaicollection:0.6>, ((blonde_hair)), (long_hair, twintails, hair_ornament, anchor_hair_ornament, hat, peaked_cap, blush, low_twintails, military, smile, breasts, open_mouth, iron_cross, cross, aqua eyes, blue eyes, 1girl, black_skirt, black_thighhighs, gloves, long_sleeves, looking_at_viewer, military_hat, military_uniform, skirt, thighhighs, uniform, white_background, white_gloves, microskirt, pleated_skirt),";
+// $prompt = " <lora:prinz_eugen_kantaicollection:0.4>, ((blonde_hair)), (long_hair, twintails, hair_ornament, anchor_hair_ornament, hat, peaked_cap, blush, low_twintails, military, smile, breasts, open_mouth, iron_cross, cross, aqua eyes, blue eyes, 1girl, black_skirt, black_thighhighs, gloves, long_sleeves, looking_at_viewer, military_hat, military_uniform, skirt, thighhighs, uniform, white_gloves, microskirt, pleated_skirt),";
 // 村雨(艦これ)
-// $prompt = " <lora:murasame_kantaicollection:0.6>, ((light_brown_hair)), (long_hair,  brown_eyes, red_eyes, ribbon, smile, serafuku, hair_ribbon, black_serafuku, breasts, twintails, two_side_up, hair_flaps, hair_ornament, 1girl, blush, collarbone, looking_at_viewer, alternate_costume, hair_between_eyes),";
+// $prompt = " <lora:murasame_kantaicollection:0.4>, ((light_brown_hair)), (long_hair,  brown_eyes, red_eyes, ribbon, smile, serafuku, hair_ribbon, black_serafuku, breasts, twintails, two_side_up, hair_flaps, hair_ornament, 1girl, blush, collarbone, looking_at_viewer, alternate_costume, hair_between_eyes),";
 // 金剛(艦これ)
-// $prompt = " <lora:kongou_kantaicollection:0.6>, ((brown_hair)), (long_hair, ahoge, hairband, hair_bun, double_bun, smile, nontraditional_miko, purple_eyes, open_mouth, 1girl, detached_sleeves, japanese_clothes, looking_at_viewer, ribbon-trimmed_sleeves, ribbon_trim),";
+// $prompt = " <lora:kongou_kantaicollection:0.4>, ((brown_hair)), (long_hair, ahoge, hair_ornament, hairband, hair_bun, hairclip, blush, double_bun, smile, nontraditional_miko, purple_eyes, open_mouth, black_skirt, skirt, red_ribbon-trimmed_sleeves, red_ribbon_trim, detached_sleeves, japanese_clothes, bare_shoulders, ribbon-trimmed_sleeves),";
 // 榛名(艦これ)
-// $prompt = "  <lora:haruna_kantaicollection:0.6>, ((black_hair)), (long_hair, hair_ornament, hairband, brown_eyes, hairclip, blush, smile, headgear, breasts, nontraditional_miko, hair_between_eyes, 1girl, detached_sleeves, japanese_clothes, looking_at_viewer, red_skirt, ribbon-trimmed_sleeves, ribbon_trim, skirt, bare_shoulders, white_background, open_mouth, sarashi, wide_sleeves),";
+// $prompt = "  <lora:haruna_kantaicollection:0.4>, ((black_hair)), (long_hair, hair_ornament, hairband, brown_eyes, hairclip, blush, smile, headgear, breasts, nontraditional_miko, hair_between_eyes, 1girl, detached_sleeves, japanese_clothes, looking_at_viewer, red_skirt, ribbon-trimmed_sleeves, ribbon_trim, skirt, bare_shoulders, open_mouth, sarashi, wide_sleeves),";
 // 島風(艦これ)
-// $prompt = " <lora:shimakaze_kantaicollection:0.6>, ((Blue mini skirt,blonde_hair)), (long_hair, hairband, blush, black_panties, blue_skirt, crop_top, elbow_gloves, gloves, highleg, highleg_panties, panties, sailor_collar, skirt, underwear, white_gloves, pleated_skirt, school_uniform, serafuku, miniskirt, microskirt, neckerchief, black_neckerchief, hair_ornament, looking_at_viewer, blue_sailor_collar, navel, smile, black_hairband, hair_between_eyes, brown_eyes, grey_eyes, thighhighs),";
+// $prompt = " <lora:shimakaze_kantaicollection:0.4>, ((Blue mini skirt,blonde_hair)), (long_hair, hairband, blush, black_panties, blue_skirt, crop_top, elbow_gloves, gloves, highleg, highleg_panties, panties, sailor_collar, skirt, underwear, white_gloves, pleated_skirt, school_uniform, serafuku, miniskirt, microskirt, neckerchief, black_neckerchief, hair_ornament, looking_at_viewer, blue_sailor_collar, navel, smile, black_hairband, hair_between_eyes, brown_eyes, grey_eyes, thighhighs),";
 // 島風(艦これ)バニーガール
-// $prompt = " <lora:shimakaze_kantaicollection:0.6>, ((blonde_hair)), (long_hair, hairband, blush, animal_ears, breasts, detached_collar, fake_animal_ears, grey_eyes, playboy_bunny, rabbit_ears, black_leotard, leotard, small_breasts, alternate_costume, black_pantyhose, pantyhose, strapless, bowtie, strapless_leotard, black_bowtie, hair_between_eyes, wrist_cuffs),";
+// $prompt = " <lora:shimakaze_kantaicollection:0.4>, ((blonde_hair)), (long_hair, hairband, blush, animal_ears, breasts, detached_collar, fake_animal_ears, grey_eyes, playboy_bunny, rabbit_ears, black_leotard, leotard, small_breasts, alternate_costume, black_pantyhose, pantyhose, strapless, bowtie, strapless_leotard, black_bowtie, hair_between_eyes, wrist_cuffs),";
 // ビスマルク(艦これ)
-// $prompt = " <lora:bismarck_azurlane:0.6>, ((blonde_hair)), (long_hair, blue_eyes, breasts, large_breasts, hat, peaked_cap, hair_between_eyes, blush, military, bare_shoulders, detached_sleeves, gloves, looking_at_viewer, military_hat, military_uniform, uniform, brown_gloves, anchor),";
+// $prompt = " <lora:bismarck_azurlane:0.4>, ((blonde_hair)), (long_hair, blue_eyes, breasts, large_breasts, hat, peaked_cap, hair_between_eyes, blush, military, bare_shoulders, detached_sleeves, gloves, looking_at_viewer, military_hat, military_uniform, uniform, brown_gloves, anchor),";
 // 大和(艦これ)
-// $prompt = " <lora:yamato_kantaicollection:0.6>, ((brown_hair)), (long_hair,  ponytail, hair_ornament, flower, hair_flower, brown_eyes, smile, breasts, cherry_blossoms, large_breasts, very_long_hair, blush, hair_between_eyes, coat, hair_intakes, long_coat, long_sleeves, shoulder_cutout, sidelocks, white_coat, clothing_cutout, pleated_skirt, (red skirt), sleeveless_coat, collar, sakuramon, thighhighs),";
+// $prompt = " <lora:yamato_kantaicollection:0.4>, ((brown_hair)), (long_hair,  ponytail, hair_ornament, flower, hair_flower, brown_eyes, smile, breasts, cherry_blossoms, large_breasts, very_long_hair, blush, hair_between_eyes, coat, hair_intakes, long_coat, long_sleeves, shoulder_cutout, sidelocks, white_coat, clothing_cutout, pleated_skirt, (red skirt), sleeveless_coat, collar, sakuramon, thighhighs),";
 // 赤城(艦これ)
-// $prompt = " <lora:akagi_kantaicollection:0.6>, ((brown_hair)), (long_hair, brown_eyes, muneate, tasuki, smile, hakama, hakama_short_skirt, hakama_skirt, japanese_clothes, looking_at_viewer, simple_background, skirt, straight_hair, white_background, red_hakama, blush, closed_mouth),";
+// $prompt = " <lora:akagi_kantaicollection:0.4>, ((brown_hair)), (long_hair, brown_eyes, muneate, tasuki, smile, hakama, hakama_short_skirt, hakama_skirt, japanese_clothes, looking_at_viewer, simple_background, skirt, straight_hair, red_hakama, blush, closed_mouth),";
 // 加賀(艦これ)
-// $prompt = " <lora:kaga_kantaicollection:0.6>, ((brown_hair)), (side_ponytail, brown_eyes, short_hair, breasts, long_hair, 1girl, chibi, japanese_clothes, tasuki, blue_hakama, hair_between_eyes, hakama, hakama_skirt, blue skirt, hakama_short_skirt, minigirl, japanese_clothes, large_breasts, gloves, partially_fingerless_gloves, yugake, single_glove, blush, white_shirt, black_choker, choker, jewelry, necklace, sweater),";
+// $prompt = " <lora:kaga_kantaicollection:0.4>, ((brown_hair)), (side_ponytail, brown_eyes, short_hair, breasts, long_hair, 1girl, chibi, japanese_clothes, tasuki, blue_hakama, hair_between_eyes, hakama, hakama_skirt, blue skirt, hakama_short_skirt, minigirl, japanese_clothes, large_breasts, gloves, partially_fingerless_gloves, yugake, single_glove, blush, white_shirt, black_choker, choker, jewelry, necklace, sweater),";
 // 夕立(艦これ)
-// $prompt = " <lora:yuudachi_kantaicollection:0.6>, ((blonde_hair)), (long_hair,  ribbon, hair_ribbon, hair_flaps, hair_ornament, red_eyes, hairclip, black_ribbon, smile, blush, serafuku, breasts, fingerless_gloves, gloves, scarf, school_uniform, open_mouth, looking_at_viewer, mini skirt),";
+// $prompt = " <lora:yuudachi_kantaicollection:0.4>, ((blonde_hair)), (long_hair,  ribbon, hair_ribbon, hair_flaps, hair_ornament, red_eyes, hairclip, black_ribbon, smile, blush, serafuku, breasts, fingerless_gloves, gloves, scarf, school_uniform, open_mouth, looking_at_viewer, mini skirt),";
 // 天津風(艦これ)
-// $prompt = " <lora:amatsukaze_kantaicollection:0.6>, ((white_hair,grey_hair)),(long_hair, two_side_up, hair_tubes, brown_eyes, blush, 1girl, dress, looking_at_viewer, sailor_collar, sailor_dress, choker, brown_dress, open_mouth),";
+// $prompt = " <lora:amatsukaze_kantaicollection:0.4>, ((white_hair,grey_hair)),(long_hair, two_side_up, hair_tubes, brown_eyes, blush, 1girl, dress, looking_at_viewer, sailor_collar, sailor_dress, choker, brown_dress, open_mouth),";
 // 山風(艦これ)
-// $prompt = " <lora:yamakaze_kantaicollection:0.6>, ((green_hair)), (hair_between_eyes, long_hair, hair_ornament, hairclip, ribbon, hair_ribbon, ponytail, black_ribbon, blush, serafuku, green_eyes, blue_eyes, black_skirt, blue_neckerchief, detached_sleeves, looking_at_viewer, neckerchief, pleated_skirt, school_uniform, skirt, thighhighs, black_serafuku, black_thighhighs, zettai_ryouiki),";
+// $prompt = " <lora:yamakaze_kantaicollection:0.4>, ((green_hair)), (hair_between_eyes, long_hair, hair_ornament, hairclip, ribbon, hair_ribbon, ponytail, black_ribbon, blush, serafuku, green_eyes, blue_eyes, black_skirt, blue_neckerchief, detached_sleeves, looking_at_viewer, neckerchief, pleated_skirt, school_uniform, skirt, thighhighs, black_serafuku, black_thighhighs, zettai_ryouiki),";
 // 江風(艦これ)
-// $prompt = " <lora:kawakaze_kantaicollection:0.6>, ((red_hair)), (long_hair, ribbon, hairband, hair_ribbon, bangs, ahoge, twintails, sidelocks, low_twintails, asymmetrical_bangs, very_long_hair, smile, blue_eyes, serafuku, sleeveless, hair_flaps, bare_shoulders, belt, black_gloves, black_skirt, collared_shirt, elbow_gloves, fingerless_gloves, gloves, looking_at_viewer, neckerchief, pleated_skirt, school_uniform, shirt, skirt, sleeveless_shirt, navel, blush, blue_neckerchief),";
+// $prompt = " <lora:kawakaze_kantaicollection:0.4>, ((red_hair)), (long_hair, ribbon, hairband, hair_ribbon, bangs, ahoge, twintails, sidelocks, low_twintails, asymmetrical_bangs, very_long_hair, smile, blue_eyes, serafuku, sleeveless, hair_flaps, bare_shoulders, belt, black_gloves, black_skirt, collared_shirt, elbow_gloves, fingerless_gloves, gloves, looking_at_viewer, neckerchief, pleated_skirt, school_uniform, shirt, skirt, sleeveless_shirt, navel, blush, blue_neckerchief),";
 // 翔鶴(艦これ)
-// $prompt = " <lora:shoukaku_kantaicollection:0.6>, ((white_hair)), (long_hair, hairband,  brown_eyes, smile, headband, blush, muneate, 1girl, japanese_clothes, looking_at_viewer, hakama, hakama_skirt, red_hakama, red_headband, skirt, hakama_short_skirt, tasuki),";
+// $prompt = " <lora:shoukaku_kantaicollection:0.4>, ((white_hair)), (long_hair, hairband,  brown_eyes, smile, headband, blush, muneate, 1girl, japanese_clothes, looking_at_viewer, hakama, hakama_skirt, red_hakama, red_headband, skirt, hakama_short_skirt, tasuki),";
 // 瑞鳳(艦これ)
-// $prompt = " <lora:zuihou_kantaicollection:0.6>, ((brown_hair)), (long_hair, brown_eyes, ponytail, headband, hachimaki, high_ponytail, smile, blush, 1girl, bow_\(weapon\), gloves, hair_ribbon, japanese_clothes, looking_at_viewer, muneate, partially_fingerless_gloves, ribbon, yugake),";
+// $prompt = " <lora:zuihou_kantaicollection:0.4>, ((brown_hair)), (long_hair, brown_eyes, ponytail, headband, hachimaki, high_ponytail, smile, blush, 1girl, bow_\(weapon\), gloves, hair_ribbon, japanese_clothes, looking_at_viewer, muneate, partially_fingerless_gloves, ribbon, yugake),";
 // アトランタ(艦これ)
-// $prompt = " <lora:atlanta_kantaicollection:0.6>, ((brown_hair)), (long_hair, two_side_up, grey_eyes, jewelry, breasts, earrings, star_earrings, large_breasts, hat, blush, black_headwear, garrison_cap, single_earring, suspenders, hair_ornament, anchor_hair_ornament, black_skirt, dress_shirt, gloves, high-waist_skirt, long_sleeves, looking_at_viewer, partially_fingerless_gloves, shirt, skirt, suspender_skirt, white_gloves, white_shirt, cowboy_shot, garter_straps, blue_eyes, thigh_strap),";
+// $prompt = " <lora:atlanta_kantaicollection:0.4>, ((brown_hair)), (long_hair, two_side_up, grey_eyes, jewelry, breasts, earrings, star_earrings, large_breasts, hat, blush, black_headwear, garrison_cap, single_earring, suspenders, hair_ornament, anchor_hair_ornament, black_skirt, dress_shirt, gloves, high-waist_skirt, long_sleeves, looking_at_viewer, partially_fingerless_gloves, shirt, skirt, suspender_skirt, white_gloves, white_shirt, cowboy_shot, garter_straps, blue_eyes, thigh_strap),";
 // 鈴谷(艦これ)
-// $prompt = " <lora:suzuya_kantaicollection:0.6>, ((aqua_hair)), (long_hair, hair_ornament, hairclip, blush, breasts, smile, aqua_eyes, green_eyes, hair_between_eyes, large_breasts, green_hair, 1girl, blazer, bowtie, brown_jacket, cardigan, jacket, school_uniform, red_bowtie),";
+// $prompt = " <lora:suzuya_kantaicollection:0.4>, ((aqua_hair)), (long_hair, hair_ornament, hairclip, blush, breasts, smile, aqua_eyes, green_eyes, hair_between_eyes, large_breasts, green_hair, 1girl, blazer, bowtie, brown_jacket, cardigan, jacket, school_uniform, red_bowtie),";
 // 高雄(艦これ)
-// $prompt = " <lora:takao_kantaicollection:0.6>, ((black_hair)), (short_hair, red_eyes, breasts, hat, large_breasts, beret, military, blush, blue_headwear, military_uniform, skirt, uniform, black_gloves, garter_straps, gloves, ascot, black_thighhighs, thighhighs, blue_skirt, blue_jacket, jacket, miniskirt, long_sleeves),";
+$prompt = " <lora:takao_kantaicollection:0.5>, ((black_hair)), (short_hair, red_eyes, breasts, blue_hat, large_breasts, blue_beret, military, blush, blue_headwear, military_uniform, skirt, uniform, black_gloves, garter_straps, gloves, ascot, black_thighhighs, thighhighs, blue_skirt, blue_jacket, jacket, miniskirt, long_sleeves),";
 // 愛宕(艦これ)
 // $prompt = " <lora:atago_kantaicollection:0.6>, ((blonde_hair)), (long_hair, hat, breasts, blush, large_breasts, smile, beret, open_mouth, military, green_eyes, blue_eyes, black_gloves, gloves, military_uniform, uniform, blue_headwear, pantyhose),";
 // 天龍(艦これ)
@@ -129,7 +102,7 @@ $api_count = 1;
 // 浜風(艦これ)
 // $prompt = " <lora:hamakaze_kantaicollection:0.6>, ((grey_hair)), (blue_eyes, short_hair, hairclip, hair_ornament, hair_over_one_eye, breasts, large_breasts, blush, serafuku, gloves, looking_at_viewer, school_uniform, short_sleeves, mini skirt, white_gloves, pantyhose, pleated_skirt, smile),";
 // 春風(艦これ)
-// $prompt = " <lora:harukaze_kantaicollection:0.6>, ((brown_hair)), (drill_hair, twin_drills, red_eyes, smile, breasts, hakama, hakama_skirt, japanese_clothes, kimono, meiji_schoolgirl_uniform, pink_kimono, red_hakama, skirt),";
+    // $prompt = " <lora:harukaze_kantaicollection:0.4>, ((brown_hair)), (drill_hair, twin_drills, red_eyes, smile, breasts, hakama, hakama_skirt, japanese_clothes, kimono, meiji_schoolgirl_uniform, pink_kimono, red_hakama, skirt),";
 // 大鯨(艦これ)
 // $prompt = " <lora:taigei_kantaicollection:0.6>, ((purple_hair)), (ahoge, long_hair, red_eyes, twintails, low_twintails, blush, hair_flaps, smile, breasts, serafuku, large_breasts, jewelry, magatama, necklace, school_uniform),";
 // 羽黒(艦これ)
@@ -309,13 +282,11 @@ $api_count = 1;
 // 敷波(艦これ)
 // $prompt = " <lora:shikinami_kantaicollection:0.6>, ((brown_hair)), (ponytail, brown_eyes, short_hair, hair_ribbon, ribbon, serafuku, blush, sailor_collar, school_uniform, skirt, short_sleeves, brown_skirt, pleated_skirt, socks, black_socks, brown_sailor_collar),";
 // 衣笠(艦これ)
-$prompt = " <lora:kinugasa_kantaicollection:0.6>, ((grey_hair)), (green_eyes, antenna_hair, long_hair, breasts, smile, hair_tie, blush, necktie, one_side_up, school_uniform, serafuku, yellow_necktie, blue_skirt, short_sleeves, skirt, gloves, pleated_skirt),";
+// $prompt = " <lora:kinugasa_kantaicollection:0.6>, ((grey_hair)), (green_eyes, antenna_hair, long_hair, breasts, smile, hair_tie, blush, necktie, one_side_up, school_uniform, serafuku, yellow_necktie, blue_skirt, short_sleeves, skirt, gloves, pleated_skirt),";
 // 最上(艦これ)
 // $prompt = " <lora:mogami_kantaicollection:0.6>, ((black_hair)), (short_hair, bangs, serafuku, green_eyes, smile, swept_bangs, brown_sailor_collar, neckerchief, sailor_collar, school_uniform, shirt, black_neckerchief, brown_shorts, long_sleeves, shorts, brown_shirt),";
 // 能代(艦これ)
 // $prompt = " <lora:noshiro_kantaicollection:0.6>, ((brown_hair)), (braid, long_hair, twin_braids, green_eyes, breasts, bangs, large_breasts, swept_bangs, blush, gloves, school_uniform, white_gloves, serafuku, cleavage, skirt),";
-// 能代(艦これ)
-// $prompt = " <lora:noshiro_kantaicollection:0.6>, ((brown_hair)), (braid, long_hair, twin_braids, green_eyes, breasts, bangs, large_breasts, swept_bangs, blush, animal_ears, cleavage, detached_collar, leotard, necktie, playboy_bunny, rabbit_ears, rabbit_tail, strapless, strapless_leotard, tail, wrist_cuffs, black_necktie, fake_animal_ears, red_leotard, alternate_costume),";
 // 多摩(艦これ)
 // $prompt = " <lora:tama_kantaicollection:0.6>, ((pink_hair)), (short_hair, red_eyes, serafuku, blush, purple_hair, hair_between_eyes, breasts, black_gloves, black_skirt, black_thighhighs, boots, gloves, hair_ornament, pleated_skirt, sailor_collar, school_uniform, short_sleeves, skirt, thigh_boots, thighhighs, shirt, animal_print, belt, black_sailor_collar, high_heels, medium_breasts),";
 // 時雨(艦これ)
@@ -460,7 +431,7 @@ $prompt = " <lora:kinugasa_kantaicollection:0.6>, ((grey_hair)), (green_eyes, an
 // ラフィー(アズレン)
 // $prompt = " <lora:laffey_azurlane:0.6>, ((white_hair)), (animal_ears, rabbit_ears, red_eyes, twintails, bangs, long_hair, hair_between_eyes, blush, hairband, fake_animal_ears, hair_ornament, collarbone, very_long_hair, red_hairband, camisole, jacket, open_clothes, open_jacket, pink_jacket, white_camisole, long_sleeves, off_shoulder, pleated_skirt, red_skirt, mini skirt, bare_shoulders),";
 // 長門(アズレン)
-// $prompt = " <lora:nagato_azurlane:0.6>, ((black_hair)), (animal_ears, fox_ears, long_hair, bangs, animal_ear_fluff, yellow_eyes, blush, blunt_bangs, hair_ornament, brown_eyes, bare_shoulders, dress, red_dress, strapless, strapless_dress, detached_sleeves, white_background, collarbone, long_sleeves, very_long_hair, white_sleeves, wide_sleeves),";
+// $prompt = " <lora:nagato_azurlane:0.6>, ((black_hair)), (animal_ears, fox_ears, long_hair, bangs, animal_ear_fluff, yellow_eyes, blush, blunt_bangs, hair_ornament, brown_eyes, bare_shoulders, dress, red_dress, strapless, strapless_dress, detached_sleeves, collarbone, long_sleeves, very_long_hair, white_sleeves, wide_sleeves),";
 // 信濃(アズレン)
 // $prompt = " <lora:shinano_azurlane:0.6>, ((white_hair)), (long_hair, animal_ears, fox_ears, animal_ear_fluff, breasts, large_breasts, blue_eyes, fox_girl, bangs, cleavage, tail, hair_ornament, multiple_tails, blush, fox_tail, very_long_hair, bare_shoulders, blue_collar, blue_kimono, japanese_clothes, kimono, off_shoulder, thighhighs, wide_sleeves, skirt, white_skirt, white_tail, white_thighhighs, collar, kyuubi, pleated_skirt, purple_eyes, long_sleeves),";
 // クリーブランド(アズレン)
